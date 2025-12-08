@@ -30,7 +30,7 @@ const PortfolioAssistant = () => {
         {
             id: '1',
             type: 'bot',
-            text: "Hi! I'm Abdul's AI Portfolio Assistant. Ask me about his experience at Camunda, his tech stack, or open-source contributions!",
+            text: "Hi there! I'm Abdul's AI Portfolio Assistant. Ask me anything about his experience at Camunda, his tech stack, open-source contributions, or professional background!",
             timestamp: new Date()
         }
     ]);
