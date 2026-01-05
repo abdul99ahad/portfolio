@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { GraduationCap, Calendar, Award } from 'lucide-react';
+import { GraduationCap, Calendar, Award, BookOpen } from 'lucide-react';
 
 const Education = () => {
     const education = [
@@ -19,6 +19,23 @@ const Education = () => {
         },
     ];
 
+    const certifications = [
+        {
+            title: "LLM Engineering: Master AI, Large Language Models & Agents",
+            issuer: "Udemy",
+            date: "In Progress"
+        },
+        {
+            title: "Deep Learning Specialization",
+            issuer: "Coursera · Andrew Ng",
+            date: "Oct 2020"
+        },
+        {
+            title: "Intermediate Python",
+            issuer: "DataCamp",
+            date: "Apr 2021"
+        }
+    ];
 
     return (
         <section id="education" aria-label="Academic Background" className="py-20 bg-slate-900/30">
@@ -62,6 +79,36 @@ const Education = () => {
                     ))}
                 </div>
 
+                {/* Certifications */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="max-w-4xl mx-auto mt-16"
+                >
+                    <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <BookOpen className="text-violet-500 w-7 h-7" />
+                        Certifications &amp; Courses
+                    </h3>
+                    <div className="space-y-4">
+                        {certifications.map((cert, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: index * 0.1 }}
+                                className="bg-slate-800/40 p-5 rounded-xl border border-slate-700/50 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:border-violet-500/30 transition-colors"
+                            >
+                                <div>
+                                    <p className="font-semibold text-slate-100">{cert.title}</p>
+                                    <p className="text-violet-400 text-sm mt-1">{cert.issuer}</p>
+                                </div>
+                                <span className="flex-shrink-0 text-sm text-slate-500 bg-slate-900/50 px-3 py-1.5 rounded-full border border-slate-800">{cert.date}</span>
+                            </motion.div>
+                        ))}
+                    </div>
+                </motion.div>
             </div>
         </section>
     );
