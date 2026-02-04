@@ -25,7 +25,7 @@ const Hero = () => {
                         <span className="text-gradient">Abdul Ahad</span>
                     </h1>
                     <p className="text-xl text-slate-400 mb-8 max-w-lg leading-relaxed">
-                        Software Engineer specializing in scalable enterprise web applications. Experienced with <span className="text-violet-400 font-semibold">React</span>, <span className="text-pink-400 font-semibold">TypeScript</span>, and <span className="text-violet-400 font-semibold">Node.js</span>.
+                        Software Engineer specializing in scalable enterprise web applications. Currently exploring <span className="text-violet-400 font-semibold">LLMs</span>, <span className="text-pink-400 font-semibold">RAG</span>, and <span className="text-violet-400 font-semibold">AI Architecture</span>.
                     </p>
 
                     <div className="flex flex-wrap gap-4 mb-10">
@@ -94,7 +94,7 @@ const Hero = () => {
                                 <span className="text-slate-500">skills:</span> <span className="text-yellow-400">['React', 'TypeScript', 'Node.js', 'Angular', 'GraphQL', 'PostgreSQL', 'NestJS', 'Docker']</span>,
                             </div>
                             <div className="pl-6">
-                                <span className="text-slate-500">currentFocus:</span> <span className="text-green-400">'Scalable Enterprise Web Apps'</span>
+                                <span className="text-slate-500">currentFocus:</span> <span className="text-green-400">'LLMs, RAG & AI Architecture'</span>
                             </div>
                             <div>
                                 <span className="text-yellow-400">{"}"}</span>;
