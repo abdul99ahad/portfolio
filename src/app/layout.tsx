@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Abdul Ahad",
   },
   description:
-    "Portfolio of Abdul Ahad — Software Engineer with 4+ years building scalable enterprise web apps. Expert in React, TypeScript, Node.js, Angular, GraphQL, and cloud technologies.",
+    "Portfolio of Abdul Ahad — Software Engineer with 4+ years building scalable enterprise web apps. Currently at BMW Group. Previously at Camunda. Expert in React, TypeScript, Node.js, Angular, GraphQL, and cloud technologies.",
 
   keywords: [
     // Identity
@@ -43,6 +43,7 @@ export const metadata: Metadata = {
     "GraphQL Developer",
     "NestJS Developer",
     // Domain
+    "BMW Group Engineer",
     "Camunda Modeler Contributor",
     "bpmn.io Contributor",
     "Open Source Contributor",
@@ -93,7 +94,7 @@ export const metadata: Metadata = {
     username: "abdul99ahad",
     title: "Abdul Ahad | Software Engineer Portfolio",
     description:
-      "Software Engineer with 4+ years of experience. React, TypeScript, Node.js, Angular, GraphQL. Previously at Camunda, contributing to Camunda Modeler and 30+ bpmn.io open-source libraries.",
+      "Software Engineer with 4+ years of experience. React, TypeScript, Node.js, Angular, GraphQL. Currently at BMW Group. Previously at Camunda, contributing to Camunda Modeler and 30+ bpmn.io libraries.",
     url: "https://abdulahad.netlify.app",
     siteName: "Abdul Ahad Portfolio",
     locale: "en_US",
@@ -104,7 +105,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Abdul Ahad | Software Engineer — React, TypeScript, Node.js, Angular",
     description:
-      "Software Engineer with 4+ years building scalable enterprise apps. Previously at Camunda, contributing to 30+ bpmn.io open-source libraries.",
+      "Software Engineer with 4+ years building scalable enterprise apps. Currently at BMW Group. Previously at Camunda.",
     creator: "@abdulahad_dev",
   },
 

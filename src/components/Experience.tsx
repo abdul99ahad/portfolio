@@ -13,6 +13,20 @@ const Experience = () => {
 
     const jobs = [
         {
+            role: "Software Engineer Intern",
+            company: "BMW Group",
+            period: "Feb 2025 – Present",
+            location: "Munich, Germany",
+            tech: ["React", "GraphQL", "AWS (Athena, S3)", "SQL", "Monorepo", "Jira", "GitHub"],
+            points: [
+                "Contributing to BATMAN, an internal analytics platform used by engineers and data teams for High Voltage Battery (HVS) diagnostics, covering SOH, SOC, symmetry analysis, single entity analysis, VIN/VAN-level tracking, CDC, and MDR reporting.",
+                "Optimised a critical GraphQL query powering Single Entity Analysis, reducing execution time from 5 minutes to 10–15 seconds and significantly improving platform responsiveness for data teams.",
+                "Delivered new features end-to-end across frontend and backend, including React components, data visualisations, and SQL queries via AWS Athena against large-scale datasets in S3.",
+                "Performed systematic code refactoring and performance optimisation across the monorepo codebase, improving maintainability and reducing technical debt.",
+                "Wrote unit tests and upheld clean code practices; introduced conventional commits to standardise the team's Git workflow and improve release traceability.",
+            ],
+        },
+        {
             role: "Software Engineer",
             company: "Camunda",
             period: "Aug 2024 – Aug 2025",

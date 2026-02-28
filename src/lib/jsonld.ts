@@ -15,7 +15,7 @@ export const personSchema = {
     familyName: "Ahad",
     jobTitle: "Software Engineer",
     description:
-        "Software Engineer with 4+ years of experience specializing in React, TypeScript, Node.js, Angular, and GraphQL. Currently contributing to Camunda Modeler and 30+ bpmn.io open-source libraries at Camunda.",
+        "Software Engineer with 4+ years of experience specializing in React, TypeScript, Node.js, Angular, and GraphQL. Currently Software Engineer Intern at BMW Group. Previously contributed to Camunda Modeler and 30+ bpmn.io open-source libraries at Camunda.",
     url: BASE_URL,
     email: "abdul9ahad@gmail.com",
     telephone: "+49-15209189253",
@@ -57,7 +57,7 @@ export const personSchema = {
     ],
     worksFor: {
         "@type": "Organization",
-        name: "Camunda",
+        name: "BMW Group",
     },
     alumniOf: {
         "@type": "EducationalOrganization",
@@ -73,7 +73,7 @@ export const websiteSchema = {
     name: "Abdul Ahad — Software Engineer Portfolio",
     url: BASE_URL,
     description:
-        "Professional portfolio of Abdul Ahad, a Software Engineer specializing in React, TypeScript, Node.js, Angular, GraphQL, and enterprise web application development. Currently contributing to Camunda Modeler.",
+        "Professional portfolio of Abdul Ahad, a Software Engineer specializing in React, TypeScript, Node.js, Angular, GraphQL, and enterprise web application development. Currently at BMW Group.",
     inLanguage: "en-US",
     author: {
         "@id": `${BASE_URL}/#person`,

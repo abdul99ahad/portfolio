@@ -30,7 +30,7 @@ const PortfolioAssistant = () => {
         {
             id: '1',
             type: 'bot',
-            text: "Hi there! I'm Abdul's AI Portfolio Assistant. Ask me anything about his experience at Camunda, his tech stack, open-source contributions, or professional background!",
+            text: "Hi there! I'm Abdul's AI Portfolio Assistant. Ask me anything about his experience at BMW Group or Camunda, his tech stack, open-source contributions, or professional background!",
             timestamp: new Date()
         }
     ]);
@@ -40,6 +40,19 @@ const PortfolioAssistant = () => {
 
     // ── Experience Data (all 3 roles) ──────────────────────────────────────
     const experienceData = [
+        {
+            company: "BMW Group",
+            role: "Software Engineer Intern",
+            period: "Feb 2025 – Present",
+            aliases: ["bmw", "bmw group", "batman", "current", "latest", "intern", "battery", "analytics", "hvs", "munich"],
+            points: [
+                "Contributing to BATMAN, an internal analytics platform for High Voltage Battery (HVS) diagnostics, covering SOH, SOC, symmetry analysis, VIN/VAN-level tracking, CDC, and MDR reporting.",
+                "Optimised a critical GraphQL query powering Single Entity Analysis, reducing execution time from 5 minutes to 10–15 seconds.",
+                "Delivered new features end-to-end: React components, data visualisations, and SQL queries via AWS Athena against large-scale S3 datasets.",
+                "Performed systematic code refactoring and performance optimisation across the monorepo.",
+                "Introduced conventional commits to standardise the team's Git workflow and improve release traceability."
+            ]
+        },
         {
             company: "Camunda",
             role: "Software Engineer (Part-Time)",
@@ -159,17 +172,17 @@ const PortfolioAssistant = () => {
 
         // ── Greetings ──────────────────────────────────────────────────────
         if (lowerInput.match(/^(hi|hello|hey|greetings|howdy|sup|yo)[\s!?]*$/)) {
-            return "Hello! Great to have you here. I can tell you about Abdul's experience at Camunda, his open-source contributions, tech stack, or education. What would you like to know?";
+            return "Hello! Great to have you here. I can tell you about Abdul's experience at BMW Group or Camunda, his open-source contributions, tech stack, or education. What would you like to know?";
         }
 
         // ── Identity ───────────────────────────────────────────────────────
         if (lowerInput.includes('who are you') || lowerInput.includes('your name') || lowerInput.includes('about yourself') || lowerInput.includes('intro')) {
-            return "I'm Abdul's AI Portfolio Assistant! I can help you explore his 4+ years of professional experience, technical skills, projects, open-source contributions, and education. Try asking: 'What is your tech stack?', 'Tell me about Camunda', or 'What open source work have you done?'";
+            return "I'm Abdul's AI Portfolio Assistant! I can help you explore his 4+ years of professional experience, technical skills, projects, open-source contributions, and education. Try asking: 'What is your tech stack?', 'Tell me about BMW', or 'What open source work have you done?'";
         }
 
         // ── About / Bio ────────────────────────────────────────────────────
         if (lowerInput.includes('about') && (lowerInput.includes('abdul') || lowerInput.includes('you') || lowerInput.includes('yourself'))) {
-            return "Abdul Ahad is a Software Engineer with 4+ years of experience building scalable, enterprise-grade web applications. He is currently a Software Engineer at Camunda, contributing to the globally-used Camunda Modeler and 30+ bpmn.io open-source libraries. Outside of work, he is actively learning about LLMs, RAG, and AI Architecture. He is based in Passau, Germany and is pursuing a Master's in Computer Science.";
+            return "Abdul Ahad is a Software Engineer with 4+ years of experience building scalable, enterprise-grade web applications. He is currently a Software Engineer Intern at BMW Group, working on BATMAN — an internal analytics platform for High Voltage Battery diagnostics. Previously, he was a Software Engineer at Camunda, contributing to the globally-used Camunda Modeler and 30+ bpmn.io open-source libraries. Outside of work, he is actively learning about LLMs, RAG, and AI Architecture. He is based in Passau, Germany and is pursuing a Master's in Computer Science.";
         }
 
         // ── Open Source ────────────────────────────────────────────────────
@@ -205,7 +218,7 @@ const PortfolioAssistant = () => {
 
         // ── Broad: Experience / Career ─────────────────────────────────────
         if (lowerInput.includes('experience') || lowerInput.includes('history') || lowerInput.includes('career') || lowerInput.includes('work') || lowerInput.includes('job') || lowerInput.includes('background')) {
-            return "Abdul has 4+ years in software development. His career path: Software Engineer (Part-Time) at Camunda (Aug 2024–Aug 2025) → Software Engineer at Techlogix (Sep 2021–Sep 2023). He is based in Passau, Germany and is pursuing a Master's in Computer Science at the University of Passau.";
+            return "Abdul has 4+ years in software development. His career path: Software Engineer Intern at BMW Group (Feb 2025–Present) → Software Engineer (Part-Time) at Camunda (Aug 2024–Aug 2025) → Software Engineer at Techlogix (Sep 2021–Sep 2023). He is based in Passau, Germany and is pursuing a Master's in Computer Science at the University of Passau.";
         }
 
         // ── Broad: Projects ────────────────────────────────────────────────
@@ -219,20 +232,20 @@ const PortfolioAssistant = () => {
         }
 
         // ── Specific skill queries ─────────────────────────────────────────
-        if (lowerInput.includes('react')) return "Abdul has extensive React.js experience, including delivering features for Camunda Modeler with Redux Toolkit, Custom Hooks, and Context API.";
+        if (lowerInput.includes('react')) return "Abdul has extensive React.js experience, including delivering features for Camunda Modeler with Redux Toolkit, Custom Hooks, and Context API. He also uses React at BMW Group for the BATMAN analytics platform.";
         if (lowerInput.includes('angular')) return "Abdul built data-driven Angular features with NgRx state management at Techlogix, integrating 50+ backend APIs for the TMX-SD multi-tenant platform.";
-        if (lowerInput.includes('graphql')) return "Abdul uses GraphQL at Techlogix where he designed GraphQL APIs integrated with PostgreSQL data models.";
+        if (lowerInput.includes('graphql')) return "Abdul uses GraphQL at BMW Group (AWS Athena-backed queries for BATMAN) and at Techlogix where he designed GraphQL APIs integrated with PostgreSQL data models.";
         if (lowerInput.includes('node') || lowerInput.includes('express')) return "Abdul builds REST APIs with Node.js and Express.js, used across Techlogix projects, the React Chat App, and open-source work on bpmn-auto-layout. He also uses NestJS for scalable backend architecture.";
-        if (lowerInput.includes('mongodb') || lowerInput.includes('postgresql') || lowerInput.includes('database')) return "Abdul works with PostgreSQL (TMX-SD at Techlogix), MongoDB, Redis, and SQL Server. He also uses Prisma ORM for type-safe database access.";
+        if (lowerInput.includes('mongodb') || lowerInput.includes('postgresql') || lowerInput.includes('database')) return "Abdul works with PostgreSQL (TMX-SD at Techlogix, SQL queries via AWS Athena at BMW), MongoDB, Redis, and SQL Server. He also uses Prisma ORM for type-safe database access.";
         if (lowerInput.includes('typescript')) return "TypeScript is one of Abdul's primary languages. He uses it for type-safe frontend (React + Redux Toolkit) and backend (NestJS, Node.js) development, ensuring maintainable, scalable code.";
         if (lowerInput.includes('docker') || lowerInput.includes('devops') || lowerInput.includes('ci') || lowerInput.includes('github actions')) return "Abdul uses Docker to containerize backend services, and GitHub Actions for CI/CD workflows. He also worked with Bitbucket CI/CD pipelines at Techlogix.";
         if (lowerInput.includes('test') || lowerInput.includes('tdd') || lowerInput.includes('mocha') || lowerInput.includes('jest')) return "Abdul practices TDD and wrote 300+ unit tests and 15+ integration tests using Mocha/Chai at Camunda, achieving ~85% test coverage. He also writes unit tests in Jest.";
-        if (lowerInput.includes('kafka') || lowerInput.includes('azure') || lowerInput.includes('aws')) return "Abdul has worked with Apache Kafka for event streaming at Techlogix, Azure (App Service, Blob Storage, Function Apps) for cloud workflows, and AWS (S3, EC2) for cloud infrastructure.";
+        if (lowerInput.includes('kafka') || lowerInput.includes('azure') || lowerInput.includes('aws')) return "Abdul has worked with Apache Kafka for event streaming at Techlogix, Azure (App Service, Blob Storage, Function Apps) for cloud workflows, and AWS (Athena, S3) at BMW Group for large-scale data querying.";
 
         // ── Education ──────────────────────────────────────────────────────
         if (lowerInput.includes('education') || lowerInput.includes('degree') || lowerInput.includes('university') || lowerInput.includes('study') || lowerInput.includes('qualification') || lowerInput.includes('master') || lowerInput.includes('bachelor')) {
             const eduList = educationData.map(e => `${e.degree} from ${e.school} (${e.year})`).join(' | ');
-            return `Abdul's education: ${eduList}. He is currently pursuing his Master's in Computer Science at the University of Passau, Germany, while looking for new opportunities.`;
+            return `Abdul's education: ${eduList}. He is currently pursuing his Master's in Computer Science at the University of Passau, Germany, while working as a Software Engineer Intern at BMW Group.`;
         }
 
         // ── Contact / Hire ─────────────────────────────────────────────────
@@ -252,11 +265,11 @@ const PortfolioAssistant = () => {
 
         // ── Why Hire ───────────────────────────────────────────────────────
         if (lowerInput.includes('why hire') || lowerInput.includes('strength') || lowerInput.includes('value') || lowerInput.includes('best at') || lowerInput.includes('why you')) {
-            return "You should hire Abdul because he brings both strong engineering fundamentals and real-world impact — from contributing features across 30+ open-source bpmn.io libraries with ~85% test coverage at Camunda. He is disciplined about TDD, clean code, and documentation, and thrives in both team and independent settings.";
+            return "You should hire Abdul because he brings both strong engineering fundamentals and real-world impact — from optimising a GraphQL query at BMW Group (5 min → 10 sec) to contributing features across 30+ open-source bpmn.io libraries with ~85% test coverage at Camunda. He is disciplined about TDD, clean code, and documentation, and thrives in both team and independent settings.";
         }
 
         // ── Default fallback ───────────────────────────────────────────────
-        return "I'm still learning! Try asking about 'Experience', 'Projects', 'Tech Stack', 'Open Source', 'Education', or something specific like 'Tell me about Camunda' or 'What projects have you worked on?'";
+        return "I'm still learning! Try asking about 'Experience', 'Projects', 'Tech Stack', 'Open Source', 'Education', or something specific like 'Tell me about Camunda' or 'What did Abdul do at BMW?'";
     };
 
     const handleSendMessage = async (e?: React.FormEvent) => {

@@ -40,8 +40,8 @@ const About = () => {
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
                     <p className="text-lg text-slate-400 leading-relaxed">
                         I am a <span className="text-violet-400 font-semibold">Software Engineer</span> with 4+ years of experience building scalable, enterprise-grade web applications.
-                        I contributed to <span className="text-pink-400 font-semibold">Camunda Modeler</span>, the flagship globally-used BPMN modeling tool, delivering features across 30+ open-source libraries.
-                        Previously at <span className="text-violet-400 font-semibold">Techlogix</span>, I built scalable cloud-first platforms with Angular, NestJS, and Kafka.
+                        Currently, I am a Software Engineer Intern at <span className="text-pink-400 font-semibold">BMW Group</span>, where I work on BATMAN — an internal analytics platform for High Voltage Battery diagnostics.
+                        Previously, I contributed to <span className="text-violet-400 font-semibold">Camunda Modeler</span>, the flagship globally-used BPMN modeling tool, delivering features across 30+ open-source libraries.
                         I am passionate about clean code, <span className="text-violet-400">Test-Driven Development</span>, and building impactful software at scale.
                     </p>
                 </motion.div>
