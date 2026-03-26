@@ -65,3 +65,7 @@ Deployed on [Netlify](https://abdulahad.netlify.app/). Push to `main` to auto-de
 ## License
 
 MIT
+
+---
+
+Built with Next.js 16, deployed on Netlify.
