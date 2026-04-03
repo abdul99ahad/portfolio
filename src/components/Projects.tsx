@@ -48,6 +48,25 @@ const Projects = () => {
             ]
         },
         {
+            title: "Orbiit",
+            role: "Full Stack Developer",
+            desc: "Full-stack project management platform built for smaller and mid-sized teams — workspaces, role-based access, task tracking, analytics, and team invites. Simpler and faster than Jira, and actively growing.",
+            fullDesc: [
+                "Built end-to-end with the MERN stack (MongoDB, Express, React, Node.js) and TypeScript.",
+                "Workspaces with role-based access control — Owner, Admin, and Member roles with granular permissions.",
+                "Task tracking with filters by status, priority, assignee, and due date.",
+                "Analytics dashboard tracking task completion rates, overdue tasks, and trends across projects.",
+                "Team collaboration via shareable invite links — no manual onboarding required.",
+                "JWT-based authentication using Passport.js (Local strategy) with secure session handling.",
+                // TODO: Add screenshots
+            ],
+            tags: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Shadcn UI", "Zustand", "React Query", "JWT"],
+            links: [
+                { label: "abdul99ahad/orbiit", url: "https://github.com/abdul99ahad/orbiit" },
+                { label: "Live Demo", url: "https://orbiit-u2p4.vercel.app" }
+            ]
+        },
+        {
             title: "React Chat App",
             role: "Full Stack Developer",
             desc: "Real-time chat application with bi-directional communication via WebSockets, featuring user rooms and live messaging.",

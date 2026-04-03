@@ -116,6 +116,19 @@ const PortfolioAssistant = () => {
                 "User rooms, live messaging, and presence indicators.",
                 "Available at: github.com/abdul99ahad/react-chat-app"
             ]
+        },
+        {
+            title: "Orbiit",
+            aliases: ["orbiit", "project management", "mern", "task tracking", "workspace", "rbac", "team", "jira", "kanban"],
+            desc: "a full-stack project management platform for smaller and mid-sized teams — workspaces, role-based access control, task tracking with filters, an analytics dashboard, and team invites. Think Jira, but simpler, faster, and actively being built.",
+            tech: "React, TypeScript, Node.js, Express, MongoDB, Mongoose, Tailwind CSS, Shadcn UI, Zustand, React Query, Passport.js, JWT, Zod",
+            highlights: [
+                "Workspaces with role-based access control — Owner, Admin, and Member roles with granular permissions.",
+                "Task filters by status, priority, assignee, and due date.",
+                "Analytics dashboard with completion rates, overdue trends, and project-level insights.",
+                "Team collaboration via shareable invite links.",
+                "Live at: orbiit-u2p4.vercel.app | GitHub: github.com/abdul99ahad/orbiit"
+            ]
         }
     ];
 
@@ -223,7 +236,7 @@ const PortfolioAssistant = () => {
 
         // ── Broad: Projects ────────────────────────────────────────────────
         if (lowerInput.includes('project') || lowerInput.includes('built') || lowerInput.includes('portfolio') || lowerInput.includes('work sample')) {
-            return "Abdul has worked on 3 key projects: 1) Camunda Modeler – Carbon Design System Integration (open-source PR #4511), 2) bpmn-auto-layout – major version release for the bpmn.io ecosystem, 3) React Chat App – real-time WebSocket chat application. Which would you like to explore?";
+            return "Abdul has worked on 4 key projects: 1) Camunda Modeler – Carbon Design System Integration (open-source PR #4511), 2) bpmn-auto-layout – major version release for the bpmn.io ecosystem, 3) React Chat App – real-time WebSocket chat application, 4) Orbiit – full-stack project management platform for teams (MERN + TypeScript). Which would you like to explore?";
         }
 
         // ── Skills / Tech Stack ────────────────────────────────────────────
