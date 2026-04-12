@@ -42,7 +42,7 @@ const Hero = () => {
                     <div className="flex gap-6" role="list" aria-label="Social profiles">
                         {[
                             { icon: <Github aria-hidden="true" />, href: 'https://github.com/abdul99ahad', label: 'GitHub profile — abdul99ahad' },
-                            { icon: <Linkedin aria-hidden="true" />, href: 'https://linkedin.com/in/abdul-ahad', label: 'LinkedIn profile — Abdul Ahad' },
+                            { icon: <Linkedin aria-hidden="true" />, href: 'https://linkedin.com/in/abdul99ahad', label: 'LinkedIn profile — Abdul Ahad' },
                         ].map((social, index) => (
                             <a
                                 key={index}

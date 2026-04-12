@@ -27,7 +27,7 @@ export const personSchema = {
     },
     sameAs: [
         "https://github.com/abdul99ahad",
-        "https://linkedin.com/in/abdul-ahad",
+        "https://linkedin.com/in/abdul99ahad",
     ],
     knowsAbout: [
         "React.js",
